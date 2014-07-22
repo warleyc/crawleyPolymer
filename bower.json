@@ -1,0 +1,19 @@
+{
+  "name": "crawleyPolymer",
+  "version": "0.0.1",
+  "authors": [
+    "Nicolas Crawley <contact@crawley.fr>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "twbs/bootstrap-sass#~3.2.0",
+    "polymer": "Polymer/polymer#~0.3.4"
+  }
+}
