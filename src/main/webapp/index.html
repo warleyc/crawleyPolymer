@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Nicolas CRAWLEY</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="Keywords" lang="fr" content="nicolas,crawley" />
+    <meta name="Identifier-URL" content="http://www.crawley.fr/" />
+    <meta name="Publisher" content="Nicolas Crawley" />
+    <meta name="Copyright" content="(c) 2011 Nicolas Crawley" />
+    <meta name="monitoring" content="Check Monitoring : www.crawley.fr" />
+    <meta name="description" content="My name is Nicolas Crawley and I am a French Java Developer.This is my personal webpage, which contains information about myself, my project and my current location. Comments and questions are more than welcome! So, no more words... Make yourself at home!" />
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png" />
+    <link rel="apple-touch-startup-image" type="image/png" href="/img/apple-touch-startup-image.png" />
+
+
+    <link href="/fw/fancyapps-fancyBox-2.1.5/source/jquery.fancybox.css" rel="stylesheet" type="text/css" media="screen" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="/css/crawley.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href='/css/font.css' rel='stylesheet' type='text/css' />
+</head>
+<body>
+<div>
+
+    <div>
+        <div class="header"></div>
+
+        <div class="footer"></div>
+        <div class="arbre"></div>
+        <jsp:include page="/views/includes/footer.jsp"/>
+    </div>
+
+    <div class="container">
+        <crawley:menu/>
+    </div>
+
+    <div class="main container">
+        <div class="row">
+
+            <crawley:home/>
+            <crawley:localisation/>
+            <crawley:projets/>
+            <crawley:contact/>
+
+        </div>
+    </div>
+</div>
+
+<jsp:include page="/views/includes/fw.jsp"/>
+
+<!-- 3. Declare the element. Configure using its attributes. -->
+<core-ajax url="http://example.com/json"
+           handleAs="json"></core-ajax>
+
+
+<!-- 1. Load platform.js for polyfill support. -->
+<script src="bower_components/platform/platform.js"></script>
+<script>
+    // Wait for 'polymer-ready'. Ensures the element is upgraded.
+    window.addEventListener('polymer-ready', function(e) {
+        var ajax = document.querySelector('core-ajax');
+
+        // Respond to events it fires.
+        ajax.addEventListener('core-response', function(e) {
+            console.log(this.response);
+        });
+
+        ajax.go(); // Call its API methods.
+    });
+</script>
+</body>
+</html>

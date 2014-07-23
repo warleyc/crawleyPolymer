@@ -1,0 +1,357 @@
+
+.bloc_socialnetwork{
+	
+	position:absolute;
+ 	top:80px;
+ 	right:200px;
+ 	width:200px;	
+	vertical-align:middle; 
+}
+
+.bloc_socialnetwork li{
+	list-style-type: none;
+	
+}
+
+.bloc_socialnetwork img{
+	vertical-align:middle;
+	margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;    
+    margin-top: 10px;
+	
+}
+
+.img_socialnetwork {
+	
+	width: 40%;
+	position: relative;
+}
+
+
+
+
+.projets{
+	text-align: center;
+	vertical-align:middle;
+}
+
+.projets img{	
+	vertical-align:middle;
+	margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;    
+    margin-top: 10px;
+}
+
+.global_location{		
+		height: 260px;
+        width: 330px;
+}
+.location_duration{
+	position: relative;	
+}
+.bloc_location{	
+	height: 190px;
+    width: 280px;	
+	position: relative;	
+	vertical-align:middle;
+	margin: 0px;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	padding: 8px;
+	padding-top: 8px;
+	padding-right: 8px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	background-color: white;
+	font: 0.8em arial, sans-serif;
+	color: black;
+	 
+
+}
+
+.bloc_inline{	
+	display:inline; 
+	width: 100%;	
+}
+
+
+.bloc_location img{	
+	float: right;	
+	position: absolute;
+	vertical-align:middle; 
+
+}
+
+.bloc_location_map {
+
+}
+
+.bloc_location_cadre {
+	
+	top: 79px;
+	left: 62px;
+	visibility: visible;
+}
+
+.bloc_location_picture {	
+	top: 87px;
+	left: 72px;
+	visibility: visible; 
+}
+
+
+    
+    
+.main{
+	position:relative;
+	width: 1040px;	
+	height:440px;
+	margin:auto;  	
+  	padding: 0;  
+}
+
+
+
+div.bloc_right {
+	margin: auto;
+	margin-top: 100px;
+	position: relative;
+	width: 700px;
+	height: 450px;
+	vertical-align:middle;
+	z-index:2;
+	font-size: 1.0em;
+	color: #333;
+	border-radius: 8px;
+	box-shadow: 0 0 white,1px 5px 10px #779;
+	-moz-border-radius: 8px 8px 8px 8px;
+    -moz-box-shadow: 0 0 #FFFFFF, 1px 5px 10px #777799;
+    border: 1px solid #DEDDE2;
+    padding: 20px 10px 10px;
+}
+
+
+
+.hide {
+	display:none;
+}
+
+
+a {  
+   text-decoration: none;
+}
+
+
+/**********************************
+
+Name: box Styles
+
+***********************************/
+
+div.jqi button:hover{
+	background-color: #728A8C;
+}
+
+
+/**********************************
+Name: bouton
+pour contruire
+http://www.pagetutor.com/button_designer/index.html
+***********************************/
+
+
+a.bouton:link{
+  width:150px;
+  height:30px;
+  text-decoration:none;
+  color:white;
+  text-align:center;
+  font-weight:bold;
+  background-color:#000080;
+  padding:5px;
+  border-style:outset;
+  border-width:2px;
+  border-color:silver
+} 
+a.bouton:visited{
+  width:150px;
+  height:30px;
+  text-decoration:none;
+  color:white;
+  text-align:center;
+  font-weight:bold;
+  background-color:#0066FF;
+  padding:5px;
+  border-style:outset;
+  border-width:2px;
+  border-color:silver
+}
+a.bouton:hover{
+  width:150px;
+  height:30px;
+  text-decoration:none;
+  color:white;
+  text-align:center;
+  font-weight:bold;
+  background-color:#0000FF;
+  background-image:url(aqua.jpg);
+  padding:5px;  
+  border-style:inset;
+  border-width:2px;
+  border-color:silver
+}
+
+
+
+
+
+/**********************************
+Name: menu Styles
+***********************************/
+
+.menu  {
+	display:inline; 
+	position: relative;
+	width: 1040px;
+	float: left;
+    min-height: 1px;
+    z-index:2;	
+    text-align: center;
+     margin: auto;
+}
+
+
+
+
+.menu a {
+	outline-style: none;
+	text-decoration: none;
+	color:#51A4F7;
+}
+
+.menu a:link {
+	outline-style: none;
+	text-decoration: none;
+	color:#51A4F7;
+}
+
+.menu a:visited {
+	outline-style: none;
+	text-decoration: none;
+	color:#51A4F7;
+}
+
+.menu a:hover {
+	color:#51A4F7;
+} 
+
+
+.menu_text {
+	width:250px;
+	height: 116px;
+	position:relative;
+	left:0px;
+	z-index:2;
+	font-family: 'Tangerine', serif;
+	font-size:350%;
+	border-style:none;
+	line-height: 100px;
+	vertical-align:middle;
+	background: url('/img/cloud.png') ;
+    background-size:250px 116px;
+    background-position: 0 0;      
+    background-repeat:no-repeat;
+    float:left; 
+}
+
+
+
+
+/**********************************
+Name: Canvas SHM
+***********************************/
+
+
+#canvas  {
+	text-align: center;		
+	background-color: #CDE4F3;
+		
+}
+
+
+.input-contact-area {
+    width: auto;
+}
+
+/*********
+*  FLAG  *
+**********/
+
+
+.ui-icon-flag-fr {
+	background-image: url("/img/fr.png");
+	background-size: 18px 18px;
+}
+.ui-icon-flag-uk {
+	background-image: url("/img/uk.png");
+}
+.ui-icon-flag-jp {
+	background-image: url("/img/jp.png");
+}
+
+
+.flag{
+	float:right; 
+	padding-top: 4px;
+
+}
+
+
+.flag img{
+	 
+	margin: 0px;
+	margin-top: 0px;
+	margin-right: 3px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+.flag a:link {
+	outline-style: none;
+	text-decoration: none;
+}
+
+.flag a:visited {
+	outline-style: none;
+	text-decoration: none;
+}
+
+
+
+#geolocalisation img {
+
+	margin: 0 auto;
+ 
+}
+
+.center { 
+	text-align: center;
+}
+
+img {
+	vertical-align: middle;
+	margin-top: 10px;
+	margin-right: 8px;
+	margin-bottom: 10px;
+	margin-left: 8px;
+}
+	

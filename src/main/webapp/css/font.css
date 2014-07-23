@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Tangerine';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Tangerine'), url(/css/font.woff) format('woff');
+}
