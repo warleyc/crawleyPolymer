@@ -19,60 +19,52 @@
     <link rel="apple-touch-startup-image" type="image/png" href="/img/apple-touch-startup-image.png" />
 
 
-    <link href="/fw/fancyapps-fancyBox-2.1.5/source/jquery.fancybox.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="bower_components/fancybox/source/jquery.fancybox.css" rel="stylesheet" type="text/css" media="screen" />
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link href="/css/crawley.css" rel="stylesheet" type="text/css" media="screen" />
     <link href='/css/font.css' rel='stylesheet' type='text/css' />
+    <!-- 1. Load platform.js for polyfill support. -->
+    <script src="bower_components/platform/platform.js"></script>
+    <link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
+
+    <link rel="import" href="templates/contact.html">
+    <link rel="import" href="templates/home.html">
+    <link rel="import" href="templates/localisation.html">
+    <link rel="import" href="templates/menu.html">
+    <link rel="import" href="templates/projets.html">
+    <link rel="import" href="templates/fw.html">
+    <link rel="import" href="templates/footer.html">
+
+
 </head>
 <body>
-<div>
+        <div>
 
-    <div>
-        <div class="header"></div>
+            <div>
+                <div class="header"></div>
+                <div class="footer"></div>
+                <div class="arbre"></div>
+                <crawley-footer />
+            </div>
 
-        <div class="footer"></div>
-        <div class="arbre"></div>
-        <jsp:include page="/views/includes/footer.jsp"/>
-    </div>
+            <div class="container">
+                <crawley-menu />
+            </div>
 
-    <div class="container">
-        <crawley:menu/>
-    </div>
+            <div class="main container">
+                <div class="row">
 
-    <div class="main container">
-        <div class="row">
+                    <crawley-home/>
+                    <crawley-localisation/>
+                    <crawley-projets/>
+                    <crawley-contact/>
 
-            <crawley:home/>
-            <crawley:localisation/>
-            <crawley:projets/>
-            <crawley:contact/>
-
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-<jsp:include page="/views/includes/fw.jsp"/>
+    <crawley-fw/>
 
-<!-- 3. Declare the element. Configure using its attributes. -->
-<core-ajax url="http://example.com/json"
-           handleAs="json"></core-ajax>
-
-
-<!-- 1. Load platform.js for polyfill support. -->
-<script src="bower_components/platform/platform.js"></script>
-<script>
-    // Wait for 'polymer-ready'. Ensures the element is upgraded.
-    window.addEventListener('polymer-ready', function(e) {
-        var ajax = document.querySelector('core-ajax');
-
-        // Respond to events it fires.
-        ajax.addEventListener('core-response', function(e) {
-            console.log(this.response);
-        });
-
-        ajax.go(); // Call its API methods.
-    });
-</script>
 </body>
 </html>

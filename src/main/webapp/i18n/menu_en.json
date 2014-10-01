@@ -1,0 +1,18 @@
+{
+        "menu": {
+            "home": "Home",
+            "project": "Projects",
+            "contact": "Contact",
+            "location": "Location",
+            "admin": "Administration",
+            "language": "Langue"
+        },
+        "language": {
+            "da": "Danois",
+            "en": "Anglais",
+            "fr": "Français",
+            "de": "Allemand",
+            "pl": "Polonais",
+            "ru": "Russe"
+        }
+}

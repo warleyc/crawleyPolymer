@@ -1,0 +1,16 @@
+{
+        "menu": {
+            "home": "ホーム",
+            "project": "プロジェクト",
+            "contact": "連絡先",
+            "location": "場所先"
+        },
+        "language": {
+            "da": "Danois",
+            "en": "Anglais",
+            "fr": "Français",
+            "de": "Allemand",
+            "pl": "Polonais",
+            "ru": "Russe"
+        }
+}
